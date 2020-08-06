@@ -1,0 +1,37 @@
+body {
+  display: grid;
+  grid-template: 20% 40% 20% / 1fr 40% 1fr;
+}
+main {
+  grid-area: 2/ 2/ 3/ 3;
+}
+h1 {
+  background-color: #93c47d;
+  font-size: 120%;
+  text-align: center;
+  color: white;
+  padding: 0.5rem;
+}
+p {
+  color: #faa72b;
+}
+p button {
+  color: white;
+  background-color: #e06667;
+  border: none;
+  padding: 0.5rem;
+}
+input,
+#add {
+  border: solid 2px #94c47e;
+  padding: 0.5rem;
+  background-color: white;
+  color: #94c47e;
+}
+div {
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 75%;
+}
