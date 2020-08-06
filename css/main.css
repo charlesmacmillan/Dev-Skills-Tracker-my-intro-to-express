@@ -22,16 +22,18 @@ p button {
   padding: 0.5rem;
 }
 input,
-#add {
+#add,
+#reset {
   border: solid 2px #94c47e;
-  padding: 0.5rem;
+  padding: 0, 0.5rem;
   background-color: white;
   color: #94c47e;
+  height: 2rem;
 }
 div {
   display: flex;
   justify-content: space-between;
 }
 input {
-  width: 75%;
+  width: 60%;
 }

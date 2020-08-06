@@ -3,13 +3,18 @@ let $input;
 let $storage = [];
 let load = [];
 //functions
-const remove = (evt) => {
-  evt.target.closest("p").remove();
-};
 const store = () => {
   $storage.push($input);
   window.localStorage.setItem(`skill`, JSON.stringify($storage));
 };
+const remove = (evt) => {
+  evt.target.closest("p").remove();
+};
+const reset = () => {
+  window.localStorage.clear();
+  $("p").remove();
+};
+
 const handleClick = () => {
   $input = $("input").val();
   $("section").append(
@@ -30,6 +35,7 @@ const init = () => {
 //event listeners
 $("#add").on("click", handleClick);
 $("section").on("click", "button", remove);
+$("#reset").on("click", reset);
 
 //initialize page
 init();
